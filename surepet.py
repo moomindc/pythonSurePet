@@ -209,10 +209,6 @@ def main():
     email, password = load_credentials()
     token = login(email, password)
     data = fetch_start_data(token)
-    #DRC Debug
-    #json_formatted_str = json.dumps(data, indent=4)
-    print(json_formatted_str)
-    
 
     if command == "status":
         cat_flaps = get_cat_flaps(data)
